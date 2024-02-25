@@ -93,8 +93,8 @@ async function processUpdate(update) {
         const name = findProductNameByNodeID(nodeID)
         const foundProduct = await myProducts.findByName(name)
         var position = await foundProduct.TargetPosition;
-        if (_.isNil(position)) {
-            position = 0
+        if (_.isNil(position) || _.isNaN(position)) {
+            return
         }
 
         if (!_.isNil(name)) {
