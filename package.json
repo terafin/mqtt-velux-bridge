@@ -14,7 +14,7 @@
         "homeautomation-js-lib": "https://github.com/terafin/homeautomation-js-lib.git",
         "lodash": "latest",
         "mqtt": "latest",
-        "got": "^11.0.0",
+        "got": "^14.2.0",
         "ws": "latest",
         "klf-200-api": "latest",
         "interval-promise": "latest"
